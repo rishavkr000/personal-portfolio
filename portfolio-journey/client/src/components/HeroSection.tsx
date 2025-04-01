@@ -65,7 +65,7 @@ const HeroSection = () => {
           </div>
           <div className="relative h-[350px] md:h-[450px] rounded-xl overflow-hidden animate-fade-in-right">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-xl">
-              <div className="absolute inset-0 bg-[url('/images/Photo.png')] bg-top bg-repeat mix-blend-overlay"></div>
+              <div className="absolute inset-0 bg-[url('/images/photo.jpg')] bg-top bg-repeat mix-blend-overlay"></div>
             </div>
           </div>
         </div>

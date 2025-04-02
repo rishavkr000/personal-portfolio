@@ -16,6 +16,12 @@ const ContactSection = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  const API_URL = import.meta.env.VITE_BACKEND_URL;
+  const CONTACT_EMAIL = import.meta.env.VITE_CONTACT_EMAIL;
+  const CONTACT_PHONE = import.meta.env.VITE_CONTACT_PHONE;
+  const CONTACT_LOCATION = import.meta.env.VITE_CONTACT_LOCATION;
+
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -26,7 +32,7 @@ const ContactSection = () => {
     setIsSubmitting(true);
   
     try {
-      const response = await fetch('http://localhost:3000/send-email', {
+      const response = await fetch(`${API_URL}/send-email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -86,7 +92,7 @@ const ContactSection = () => {
                     href="mailto:contact@example.com" 
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    rishavkr000@gmail.com
+                    {CONTACT_EMAIL}
                   </a>
                 </div>
               </div>
@@ -99,7 +105,7 @@ const ContactSection = () => {
                     href="tel:+11234567890" 
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +91 9608571248
+                    {CONTACT_PHONE}
                   </a>
                 </div>
               </div>
@@ -108,7 +114,7 @@ const ContactSection = () => {
                 <MapPin className="h-5 w-5 text-primary mt-1 mr-3" />
                 <div>
                   <h4 className="font-medium">Location</h4>
-                  <p className="text-muted-foreground">Bangalore, KA</p>
+                  <p className="text-muted-foreground">{CONTACT_LOCATION}</p>
                 </div>
               </div>
             </div>

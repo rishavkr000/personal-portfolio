@@ -1,6 +1,10 @@
 
 import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
 
+const GITHUB_URL = import.meta.env.VITE_GITHUB_URL;
+const LINKEDIN_URL = import.meta.env.VITE_LINKEDIN_URL;
+const CONTACT_EMAIL = import.meta.env.VITE_CONTACT_EMAIL;
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
@@ -20,7 +24,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-end">
             <div className="flex space-x-4 mb-4">
               <a 
-                href="https://github.com/rishavkr000" 
+                href={GITHUB_URL} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-secondary hover:bg-primary/20 transition-colors p-2 rounded-full"
@@ -29,7 +33,7 @@ const Footer = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a 
-                href="https://www.linkedin.com/in/rishavkr000/" 
+                href={LINKEDIN_URL} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-secondary hover:bg-primary/20 transition-colors p-2 rounded-full"
@@ -47,7 +51,7 @@ const Footer = () => {
                 <Twitter className="h-5 w-5" />
               </a> */}
               <a 
-                href="mailto:rishavkr000@gmail.com" 
+                href={`mailto:${CONTACT_EMAIL}`} 
                 className="bg-secondary hover:bg-primary/20 transition-colors p-2 rounded-full"
                 aria-label="Email"
               >

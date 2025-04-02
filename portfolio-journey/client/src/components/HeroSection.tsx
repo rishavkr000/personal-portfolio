@@ -2,6 +2,10 @@
 import { ArrowDown, FileText, Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
+const GITHUB_URL = import.meta.env.VITE_GITHUB_URL;
+const LINKEDIN_URL = import.meta.env.VITE_LINKEDIN_URL;
+const CV_URL = import.meta.env.VITE_CV_URL;
+
 const HeroSection = () => {
   return (
     <section 
@@ -31,10 +35,9 @@ const HeroSection = () => {
                 variant="outline" 
                 size="lg"
                 onClick={() => {
-                  const cvUrl = "/cv/my_resume.pdf";
                   const link = document.createElement("a");
-                  link.href = cvUrl;
-                  link.download = "My_Resume.pdf";
+                  link.href = CV_URL;
+                  link.download = "Rishav's_Resume.pdf";
                   document.body.appendChild(link);
                   link.click();
                   document.body.removeChild(link);
@@ -46,7 +49,7 @@ const HeroSection = () => {
             </div>
             <div className="flex gap-4 pt-2">
               <a 
-                href="https://github.com/rishavkr000" 
+                href={GITHUB_URL} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-card hover:bg-secondary transition-colors p-3 rounded-full"
@@ -54,7 +57,7 @@ const HeroSection = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a 
-                href="https://www.linkedin.com/in/rishavkr000/" 
+                href={LINKEDIN_URL} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-card hover:bg-secondary transition-colors p-3 rounded-full"

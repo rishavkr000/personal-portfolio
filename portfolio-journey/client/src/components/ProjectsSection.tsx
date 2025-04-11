@@ -16,7 +16,7 @@ const projects: ProjectProps[] = [
   {
     id: 2,
     title: 'E-Commerce Platform',
-    description: 'A robust backend system for an e-commerce platform featuring user authentication, product management, cart functionality, and order processing, built during backend development training.',
+    description: 'A robust backend system for an e-commerce platform featuring user authentication, product management, cart functionality, and order processing.',
     imageUrl: 'https://images.unsplash.com/photo-1607082349566-187342175e2f?q=80&w=2070',
     tags: ['Node.js', 'Express', 'MongoDB', 'JavaScript'],
     githubUrl: 'https://github.com/rishavkr000/projects/tree/main/e-comm',
@@ -25,7 +25,7 @@ const projects: ProjectProps[] = [
   {
     id: 3,
     title: 'Online Book Store',
-    description: 'A backend API for an online bookstore with features like user registration, book management, and review system, developed as part of backend training to handle CRUD operations securely.',
+    description: 'A backend API for an online bookstore with features like user registration, book management, and review system, developed to handle CRUD operations securely.',
     imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcbzHsFa6p1CeBlUj9LzJvVT-EjrMFXzXHHw&s',
     tags: ['Node.js', 'Express', 'MongoDB', 'JavaScript'],
     githubUrl: 'https://github.com/rishavkr000/projects/tree/main/OnlineBookStore',
@@ -34,7 +34,7 @@ const projects: ProjectProps[] = [
   {
     id: 4,
     title: 'Blogging Site',
-    description: 'A backend solution for a blogging platform allowing authors to create, update, and delete blogs with authentication, built during training to enhance backend development skills.',
+    description: 'A backend solution for a blogging platform allowing authors to create, update, and delete blogs with authentication, built to enhance backend development skills.',
     imageUrl: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070',
     tags: ['Node.js', 'Express', 'MongoDB', 'JavaScript'],
     githubUrl: 'https://github.com/rishavkr000/projects/tree/main/BloggingSites',

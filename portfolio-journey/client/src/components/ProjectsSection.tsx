@@ -7,7 +7,7 @@ const projects: ProjectProps[] = [
   {
     id: 1,
     title: 'PBI Flow - Power BI Report Automation',
-    description: 'A full-stack application designed to automate Power BI report scheduling and distribution. Users can schedule reports for future delivery, which are rendered and exported using GCP integration and stored data from PostgreSQL, streamlining reporting workflows.',
+    description: 'A full-stack platform that automates Power BI report scheduling and delivery. Users can schedule reports with dynamic filters, which are rendered and exported via GCP services and delivered as attachments through integrated email services like Outlook and SendGrid. The system leverages PostgreSQL for job tracking, supports retry logic for failed exports, and simplifies enterprise reporting workflows end-to-end.',
     imageUrl: '/images/PBI.png',
     tags: ['React', 'Express', 'PostgreSQL', 'Node', 'Power BI API', 'JavaScript', 'TypeScript', 'GCP'],
     liveUrl: 'https://app.pbiflow.com',
@@ -16,16 +16,16 @@ const projects: ProjectProps[] = [
   {
     id: 2,
     title: 'E-Commerce Platform',
-    description: 'A robust backend system for an e-commerce platform featuring user authentication, product management, cart functionality, and order processing.',
+    description: 'A robust e-commerce backend system built to handle end-to-end operations including user authentication, product management, cart and order handling, and secure checkout flows. The system supports real-time inventory tracking, role-based access control for admins, and seamless API integration for frontend clients. Designed with scalability and modularity in mind to support future growth and third-party service integration.',
     imageUrl: 'https://images.unsplash.com/photo-1607082349566-187342175e2f?q=80&w=2070',
-    tags: ['Node.js', 'Express', 'MongoDB', 'JavaScript'],
+    tags: ['Node.js', 'Express', 'MongoDB', 'JavaScript', 'Git'],
     githubUrl: 'https://github.com/rishavkr000/projects/tree/main/e-comm',
     category: 'backend'
   },
   {
     id: 3,
     title: 'Online Book Store',
-    description: 'A backend API for an online bookstore with features like user registration, book management, and review system, developed to handle CRUD operations securely.',
+    description: 'A backend RESTful API built with Node.js, Express, and MongoDB to support a fully functional online bookstore. The system includes secure user authentication, book catalog management, and a review system where users can post and manage feedback. Designed to handle robust CRUD operations with proper validations and error handling, making it scalable and ready for integration with any frontend.',
     imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcbzHsFa6p1CeBlUj9LzJvVT-EjrMFXzXHHw&s',
     tags: ['Node.js', 'Express', 'MongoDB', 'JavaScript'],
     githubUrl: 'https://github.com/rishavkr000/projects/tree/main/OnlineBookStore',
@@ -34,7 +34,7 @@ const projects: ProjectProps[] = [
   {
     id: 4,
     title: 'Blogging Site',
-    description: 'A backend solution for a blogging platform allowing authors to create, update, and delete blogs with authentication, built to enhance backend development skills.',
+    description: 'A backend solution for a dynamic blogging platform, developed using Node.js, Express, and MongoDB. It enables authenticated users to create, edit, and delete blog posts, with secure user authentication and authorization mechanisms. Designed with modular architecture and proper data validations to ensure scalability and clean code practices — ideal for real-world backend development scenarios.',
     imageUrl: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070',
     tags: ['Node.js', 'Express', 'MongoDB', 'JavaScript'],
     githubUrl: 'https://github.com/rishavkr000/projects/tree/main/BloggingSites',
@@ -43,7 +43,7 @@ const projects: ProjectProps[] = [
   {
     id: 5,
     title: 'URL Shortener',
-    description: 'A lightweight backend service to shorten URLs and redirect users to original links, developed to practice RESTful API design and implementation.',
+    description: 'A lightweight backend service built with Node.js, Express, and MongoDB that shortens long URLs and redirects users to the original links. The project is designed to practice RESTful API design principles, focusing on efficient URL handling, scalability, and performance. It includes features like URL validation, error handling, and tracking for better user experience and system reliability.',
     imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlnP3FUCd5jHwaF-Sy2anVdiSbggAI7m2_dw&s',
     tags: ['Node.js', 'Express', 'MongoDB', 'JavaScript'],
     githubUrl: 'https://github.com/rishavkr000/projects/tree/main/UrlShortner',
@@ -52,7 +52,7 @@ const projects: ProjectProps[] = [
   {
     id: 6,
     title: 'Open to Intern',
-    description: 'This is a backend project where colleges and internships can be registered via a website. It includes APIs to create colleges, register interns, and fetch college-internship association details, aimed at simplifying internship management.',
+    description: 'A backend system built with Node.js, Express, and MongoDB that allows colleges and internship programs to register via a web interface. The project includes APIs for adding colleges, registering interns, and fetching the details of college-internship associations. Designed to streamline the management of internships, it simplifies the process for both students and institutions by providing a central platform for internship tracking and registration.',
     imageUrl: 'https://png.pngtree.com/png-clipart/20230916/original/pngtree-open-internships-vector-png-image_12249527.png',
     tags: ['Node.js', 'Express', 'MongoDB', 'JavaScript'],
     githubUrl: 'https://github.com/rishavkr000/projects/tree/main/OpenToIntern',

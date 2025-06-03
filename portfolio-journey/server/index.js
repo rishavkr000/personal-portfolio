@@ -22,6 +22,10 @@ const transporter = nodemailer.createTransport({
 // Email sending endpoint
 app.post('/send-email', (req, res) => {
   const { name, email, subject, message } = req.body;
+  console.log("Name: ", name)
+  console.log("Email: ", email)
+  console.log("Subject: ", subject)
+  console.log("Message: ", message)
 
   const mailOptions = {
     from: email, // Sender's email (user ka email)
